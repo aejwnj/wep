@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오예스 보일러 | 고객 문의</title>
+    <link rel="stylesheet" href="public/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">
+                <a href="index.html">오예스 보일러</a>
+              </h1>
+              
+            <nav class="main-nav">
+                <button class="mobile-menu-toggle" aria-label="메뉴 열기">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="products.html">제품 소개</a></li>
+                    <li><a href="contact.html" class="active">고객 문의</a></li>
+                    <li><a href="tel:010-6331-1500" class="phone-link">📞 전화 문의</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>고객 문의</h2>
+                <p>궁금한 점이 있으시면 언제든지 문의해 주세요</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact">
+                    <h3>문의 방법</h3>
+                    <p>다양한 방법으로 문의하실 수 있습니다.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-text">
+                                <a href="tel:010-6331-1500">010-6331-1500</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-text">
+                                <a href="mailto:mariok30@naver.com">mariok30@naver.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">🏢</div>
+                            <div class="contact-text">
+                                경기도 고양시 일산동구 중앙로 1129 대우로얄파크 서관 1030호
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3>영업 시간</h3>
+                    <p>평일: 오전 9시 - 오후 6시</p>
+                    <p>토요일: 오전 9시 - 오후 1시</p>
+                    <p>일요일 및 공휴일: 휴무</p>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>문의 양식</h3>
+                    <form action="thank-you.html" method="get" onsubmit="return validateForm()">
+                        <div class="form-group">
+                            <label for="name">이름</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="이름을 입력하세요">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">이메일</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="이메일을 입력하세요">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">전화번호</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="예: 010-1234-5678">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">문의 유형</label>
+                            <select id="subject" name="subject" class="form-control">
+                                <option value="product">제품 문의</option>
+                                <option value="installation">설치 문의</option>
+                                <option value="repair">수리 문의</option>
+                                <option value="other">기타 문의</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">문의 내용</label>
+                            <textarea id="message" name="message" class="form-control" placeholder="문의 내용을 입력하세요"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large">문의하기</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="company-info">
+                    <h3>회사 정보</h3>
+                    <p>대표자: 김래성</p>
+                    <p>사업자등록: 816-06-00353</p>
+                    <p>주소: 경기도 고양시 일산동구 중앙로 1129 대우로얄파크 서관 1030호</p>
+                    <p><a herf="Production">by Mr. Lee</a></p>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>연락처</h3>
+                    <p><a href="tel:010-6331-1500">전화: 010-6331-1500</a></p>
+                    <p><a href="mailto:mariok30@naver.com">이메일: mariok30@naver.com</a></p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 오예스 보일러. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="public/script.js"></script>
+</body>
+</html>

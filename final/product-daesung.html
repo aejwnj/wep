@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오예스 보일러 | 대성 제품</title>
+    <link rel="stylesheet" href="public/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">                
+            <a href="index.html">오예스 보일러</a>
+            </h1>
+            <nav class="main-nav">
+                <button class="mobile-menu-toggle" aria-label="메뉴 열기">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="products.html" class="active">제품 소개</a></li>
+                    <li><a href="contact.html">고객 문의</a></li>
+                    <li><a href="tel:010-6331-1500" class="phone-link">📞 전화 문의</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-header">
+                <h2>대성 보일러</h2>
+                <p class="product-subtitle">안정적인 성능의 프리미엄 보일러</p>
+            </div>
+            
+            <div class="product-content">
+                <div class="product-gallery">
+                    <div class="product-main-image">
+                        <img src="public/images/01_2.jpg" alt="대성 전기온수기" id="mainProductImage">
+                    </div>
+                    <div class="product-thumbnails">
+                        <img src="public/images/01_2.jpg" alt="대성 전기온수기" class="thumbnail active" onclick="changeImage(this)">
+                        <img src="public/images/boiler2.jpg" alt="대성 전기온수기" class="thumbnail active" onclick="changeImage(this)">
+                        <img src="public/images/3.jpg" alt="대성 온수기 상세 이미지" class="thumbnail" onclick="changeImage(this)">
+                        <img src="public/images/3_1.jpg" alt="대성 온수기 상세 이미지" class="thumbnail" onclick="changeImage(this)">
+                        <img src="public/images/3_2.jpg" alt="대성 온수기 상세 이미지" class="thumbnail" onclick="changeImage(this)">
+                        <img src="public/images/3_3.jpg" alt="대성 온수기 상세 이미지" class="thumbnail" onclick="changeImage(this)">
+                        <img src="public/images/3_4.jpg" alt="대성 온수기 상세 이미지" class="thumbnail" onclick="changeImage(this)">
+                        <img src="public/images/05.jpg" alt="대성 온수기 상세 이미지" class="thumbnail" onclick="changeImage(this)">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <div class="product-features">
+                        <h3>대성 보일러 특징</h3>
+                        <ul>
+                            <li><strong>IPX4 방수 등급의 생활방수 가능</strong> - 습기가 많은 환경에서도 안전하게 사용</li>
+                            <li><strong>자동 온도조절장치</strong> - 비정상적인 과열 현상을 사전에 방지</li>
+                            <li><strong>과압방지 기능의 2중 안전장치</strong> - 안전한 사용 보장</li>
+                            <li><strong>스테인리스 내통</strong> - 위생적이고 내구성 우수</li>
+                            <li><strong>에너지 효율 우수한 설계</strong> - 전기료 절감 효과</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="product-specs">
+                        <h3>제품 사양</h3>
+                        <table class="specs-table">
+                            <tr>
+                                <th>모델명</th>
+                                <td>DSF-JRBS 시리즈</td>
+                            </tr>
+                            <tr>
+                                <th>용량</th>
+                                <td>15L / 30L / 50L</td>
+                            </tr>
+                            <tr>
+                                <th>설치방식</th>
+                                <td>벽걸이형</td>
+                            </tr>
+                            <tr>
+                                <th>내통재질</th>
+                                <td>스테인리스 316L</td>
+                            </tr>
+                            <tr>
+                                <th>온도조절범위</th>
+                                <td>35~80℃</td>
+                            </tr>
+                            <tr>
+                                <th>소비전력</th>
+                                <td>1.5kW (15L) / 2.5kW (30L) / 2.5kW (50L)</td>
+                            </tr>
+                            <tr>
+                                <th>에너지 효율</th>
+                                <td>1등급</td>
+                            </tr>
+                            <tr>
+                                <th>보증 기간</th>
+                                <td>3년</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <a href="contact.html" class="btn btn-primary btn-large">문의하기</a>
+                        <a href="tel:010-6331-1500" class="btn btn-secondary btn-large">📞 전화 상담</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="product-details-tabs">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab-btn active" onclick="openTab(event, 'features')">상세 특징</button>
+                <button class="tab-btn" onclick="openTab(event, 'installation')">설치 안내</button>
+                <button class="tab-btn" onclick="openTab(event, 'warranty')">보증 정보</button>
+            </div>
+            
+            <div id="features" class="tab-content active">
+                <h3>대성 전기온수기 상세 특징</h3>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">💧</div>
+                        <h4>IPX4 방수 등급</h4>
+                        <p>IPX4 방수 등급을 획득하여 습기가 많은 환경에서도 안전하게 사용할 수 있습니다. 물이 튀는 상황에서도 제품 손상 없이 정상 작동합니다.</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">🔒</div>
+                        <h4>2중 안전장치</h4>
+                        <p>자동 온도조절장치와 과압방지 기능의 2중 안전장치를 탑재하여 비정상적인 과열 현상을 사전에 방지합니다. 안전한 사용 환경을 보장합니다.</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">🧪</div>
+                        <h4>스테인리스 내통</h4>
+                        <p>고품질 스테인리스 내통을 사용하여 위생적이고 내구성이 우수합니다. 부식에 강하며 오랜 시간 사용해도 깨끗한 온수를 제공합니다.</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">⚡</div>
+                        <h4>에너지 효율 설계</h4>
+                        <p>고효율 발열체와 최적화된 단열 설계로 에너지 효율이 우수합니다. 전기료 절감 효과가 있어 경제적으로 사용할 수 있습니다.</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">🔧</div>
+                        <h4>간편한 설치 및 유지보수</h4>
+                        <p>간편한 설치 구조와 유지보수가 쉬운 디자인으로 설계되었습니다. 필요시 부품 교체가 용이하여 오랜 기간 사용할 수 있습니다.</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">🌡️</div>
+                        <h4>정확한 온도 제어</h4>
+                        <p>정밀한 온도 센서와 제어 시스템으로 설정한 온도를 정확하게 유지합니다. 일정한 온수 온도로 편안한 사용 경험을 제공합니다.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="installation" class="tab-content">
+                <h3>설치 안내</h3>
+                <div class="installation-guide">
+                    <div class="installation-requirements">
+                        <h4>설치 요구사항</h4>
+                        <ul>
+                            <li>전기 용량: 단상 220V, 60Hz</li>
+                            <li>급수관: 15A 이상 권장</li>
+                            <li>배수관: 적절한 배수 시설 필요</li>
+                            <li>설치 공간: 제품 크기보다 여유 있는 공간 확보 필요</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="installation-process">
+                        <h4>설치 과정</h4>
+                        <ol>
+                            <li>전문 기사가 현장 방문하여 설치 환경 확인</li>
+                            <li>적합한 위치 선정 및 설치 계획 수립</li>
+                            <li>필요시 전기 및 배관 공사 진행</li>
+                            <li>제품 설치 및 연결</li>
+                            <li>시운전 및 작동 테스트</li>
+                            <li>사용 방법 안내 및 주의사항 설명</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="installation-notice">
+                        <h4>설치 시 주의사항</h4>
+                        <ul>
+                            <li>안전을 위해 반드시 전문 기사를 통한 설치를 권장합니다.</li>
+                            <li>습기가 많은 장소에 설치할 경우 적절한 방수 조치가 필요합니다.</li>
+                            <li>동파 방지를 위해 실외 설치는 권장하지 않습니다.</li>
+                            <li>제품 주변에 인화성 물질을 두지 마세요.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="warranty" class="tab-content">
+                <h3>보증 정보</h3>
+                <div class="warranty-info">
+                    <div class="warranty-period">
+                        <h4>보증 기간</h4>
+                        <p>대성 전기온수기는 구입일로부터 <strong>2년</strong>의 제품 보증 기간을 제공합니다.</p>
+                        <ul>
+                            <li>내통 및 주요 부품: 2년</li>
+                            <li>전기 부품: 1년</li>
+                            <li>소모성 부품: 6개월</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="warranty-coverage">
+                        <h4>보증 범위</h4>
+                        <p>보증 기간 내 정상적인 사용 상태에서 발생한 제품 결함에 대해 무상 수리 또는 부품 교체를 제공합니다.</p>
+                        <h5>보증 제외 사항:</h5>
+                        <ul>
+                            <li>사용자의 취급 부주의로 인한 고장 및 파손</li>
+                            <li>비공인 수리점에서의 수리로 인한 고장</li>
+                            <li>천재지변(화재, 수해, 지진 등)으로 인한 고장</li>
+                            <li>설치 후 이동 및 낙하로 인한 고장</li>
+                            <li>대성에서 지정하지 않은 부품 사용으로 인한 고장</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="warranty-service">
+                        <h4>서비스 신청 방법</h4>
+                        <p>제품에 문제가 발생했을 경우, 다음 방법으로 서비스를 신청할 수 있습니다:</p>
+                        <ul>
+                            <li>오예스 보일러 고객센터: <a href="tel:010-6331-1500">010-6331-1500</a></li>
+                            <li>대성 고객센터: 1588-8577</li>
+                            <li>이메일 문의: <a href="mailto:mariok30@naver.com">mariok30@naver.com</a></li>
+                        </ul>
+                        <p>서비스 신청 시 제품 모델명, 구입일자, 고장 증상을 자세히 알려주시면 더 빠른 서비스를 받으실 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="related-products">
+        <div class="container">
+            <h3>다른 제품 둘러보기</h3>
+            <div class="product-cards">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="public/images/boiler1.jpg" alt="린나이 전기온수기" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h4>린나이 전기온수기</h4>
+                        <p>고효율 에너지 절약형 보일러</p>
+                        <a href="product-rinnai.html" class="btn btn-secondary">자세히 보기</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="public/images/boiler3.jpg" alt="경동나비엔 전기온수기" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h4>경동나비엔 전기온수기</h4>
+                        <p>최신 기술이 적용된 스마트 보일러</p>
+                        <a href="product-kyungdong.html" class="btn btn-secondary">자세히 보기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="company-info">
+                    <h3>회사 정보</h3>
+                    <p>대표자: 김래성</p>
+                    <p>사업자등록: 816-06-00353</p>
+                    <p>주소: 경기도 고양시 일산동구 중앙로 1129 대우로얄파크 서관 1030호</p>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>연락처</h3>
+                    <p><a href="tel:010-6331-1500">전화: 010-6331-1500</a></p>
+                    <p><a href="mailto:mariok30@naver.com">이메일: mariok30@naver.com</a></p>
+                    <p><a herf="Production">by Mr. Lee</a></p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 오예스 보일러. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="public/script.js"></script>
+</body>
+</html>

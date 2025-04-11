@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오예스 보일러 | 경동나비엔 제품</title>
+    <link rel="stylesheet" href="public/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">                
+            <a href="index.html">오예스 보일러</a>
+            </h1>
+            <nav class="main-nav">
+                <button class="mobile-menu-toggle" aria-label="메뉴 열기">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="products.html" class="active">제품 소개</a></li>
+                    <li><a href="contact.html">고객 문의</a></li>
+                    <li><a href="tel:010-6331-1500" class="phone-link">📞 전화 문의</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-header">
+                <h2>경동나비엔 보일러</h2>
+                <p class="product-subtitle">최신 기술이 적용된 스마트 보일러</p>
+            </div>
+            
+            <div class="product-content">
+                <div class="product-gallery">
+                    <div class="product-main-image">
+                        <img src="public/images/4.jpg" alt="경동나비엔 전기온수기" id="mainProductImage">
+                    </div>
+                    <div class="product-thumbnails">
+                        <img src="public/images/4.jpg" alt="경동나비엔 전기온수기" class="thumbnail active" onclick="changeImage(this)">
+                        <img src="public/images/.jpg" alt="경동나비엔 전기온수기" class="thumbnail active" onclick="changeImage(this)">
+                        <img src="public/images/4_1.jpg" alt="경동나비엔 온수기 상세 이미지" class="thumbnail" onclick="changeImage(this)">
+                        <img src="public/images/4_2.jpg" alt="경동나비엔 온수기 상세 이미지" class="thumbnail" onclick="changeImage(this)">
+                        <img src="public/images/05.jpg" alt="경동나비엔 온수기 상세 이미지" class="thumbnail" onclick="changeImage(this)">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <div class="product-features">
+                        <h3>경동나비엔 보일러 특징</h3>
+                        <ul>
+                            <li><strong>스마트 온도 제어 시스템</strong> - 정확한 온도 유지 및 에너지 절약</li>
+                            <li><strong>고효율 열교환기</strong> - 빠른 온수 공급과 에너지 효율 극대화</li>
+                            <li><strong>다중 안전장치</strong> - 과열, 과압, 동파 방지 등 안전 기능 탑재</li>
+                            <li><strong>저소음 설계</strong> - 조용한 작동으로 편안한 사용 환경 제공</li>
+                            <li><strong>내구성 강화 설계</strong> - 장기간 안정적인 사용 가능</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="product-specs">
+                        <h3>제품 사양</h3>
+                        <table class="specs-table">
+                            <tr>
+                                <th>모델명</th>
+                                <td>EW-30R</td>
+                            </tr>
+                            <tr>
+                                <th>용량</th>
+                                <td>30L / 50L / 80L</td>
+                            </tr>
+                            <tr>
+                                <th>설치방식</th>
+                                <td>벽걸이형</td>
+                            </tr>
+                            <tr>
+                                <th>내통재질</th>
+                                <td>스테인리스 316L</td>
+                            </tr>
+                            <tr>
+                                <th>온도조절범위</th>
+                                <td>35~80℃</td>
+                            </tr>
+                            <tr>
+                                <th>소비전력</th>
+                                <td>2.0kW (30L) / 3.0kW (50L) / 3.5kW (80L)</td>
+                            </tr>
+                            <tr>
+                                <th>에너지 효율</th>
+                                <td>1등급</td>
+                            </tr>
+                            <tr>
+                                <th>보증 기간</th>
+                                <td>3년</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <a href="contact.html" class="btn btn-primary btn-large">문의하기</a>
+                        <a href="tel:010-6331-1500" class="btn btn-secondary btn-large">📞 전화 상담</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="product-details-tabs">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab-btn active" onclick="openTab(event, 'features')">상세 특징</button>
+                <button class="tab-btn" onclick="openTab(event, 'installation')">설치 안내</button>
+                <button class="tab-btn" onclick="openTab(event, 'warranty')">보증 정보</button>
+            </div>
+            
+            <div id="features" class="tab-content active">
+                <h3>경동나비엔 전기온수기 상세 특징</h3>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">🌡️</div>
+                        <h4>스마트 온도 제어 시스템</h4>
+                        <p>정밀한 온도 센서와 첨단 제어 시스템으로 설정 온도를 정확하게 유지합니다. 온도 변화에 빠르게 대응하여 항상 일정한 온수를 제공합니다.</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">⚡</div>
+                        <h4>고효율 열교환기</h4>
+                        <p>최신 기술이 적용된 고효율 열교환기를 탑재하여 빠른 온수 공급과 에너지 효율을 극대화했습니다. 전기 사용량을 최소화하여 경제적입니다.</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">🔒</div>
+                        <h4>다중 안전장치</h4>
+                        <p>과열 방지, 과압 방지, 동파 방지 등 다양한 안전 장치를 탑재하여 안심하고 사용할 수 있습니다. 비상 상황에 자동으로 대응하는 시스템을 갖추고 있습니다.</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">🔇</div>
+                        <h4>저소음 설계</h4>
+                        <p>특수 설계된 내부 구조와 고품질 부품 사용으로 작동 소음을 최소화했습니다. 조용한 환경에서도 부담 없이 사용할 수 있습니다.</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">🧪</div>
+                        <h4>내구성 강화 설계</h4>
+                        <p>고품질 스테인리스 316L 내통과 내구성 높은 부품을 사용하여 제품 수명이 길고 성능이 오래 유지됩니다. 부식에 강하고 위생적입니다.</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">💧</div>
+                        <h4>일정한 수압 유지</h4>
+                        <p>안정적인 수압 제어 시스템으로 여러 곳에서 동시에 온수를 사용해도 일정한 수압과 온도를 유지합니다. 편안한 사용 경험을 제공합니다.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="installation" class="tab-content">
+                <h3>설치 안내</h3>
+                <div class="installation-guide">
+                    <div class="installation-requirements">
+                        <h4>설치 요구사항</h4>
+                        <ul>
+                            <li>전기 용량: 단상 220V, 60Hz</li>
+                            <li>급수관: 15A 이상 권장</li>
+                            <li>배수관: 적절한 배수 시설 필요</li>
+                            <li>설치 공간: 제품 크기보다 여유 있는 공간 확보 필요</li>
+                            <li>벽면 강도: 제품 무게를 지탱할 수 있는 튼튼한 벽면 필요</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="installation-process">
+                        <h4>설치 과정</h4>
+                        <ol>
+                            <li>전문 기사가 현장 방문하여 설치 환경 확인</li>
+                            <li>적합한 위치 선정 및 설치 계획 수립</li>
+                            <li>필요시 전기 및 배관 공사 진행</li>
+                            <li>벽면에 설치 브라켓 고정</li>
+                            <li>제품 설치 및 연결</li>
+                            <li>시운전 및 작동 테스트</li>
+                            <li>사용 방법 안내 및 주의사항 설명</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="installation-notice">
+                        <h4>설치 시 주의사항</h4>
+                        <ul>
+                            <li>안전을 위해 반드시 전문 기사를 통한 설치를 권장합니다.</li>
+                            <li>습기가 많은 장소에 설치할 경우 적절한 방수 조치가 필요합니다.</li>
+                            <li>동파 방지를 위해 실외 설치는 권장하지 않습니다.</li>
+                            <li>제품 주변에 인화성 물질을 두지 마세요.</li>
+                            <li>제품 설치 후 최소 30cm 이상의 유지보수 공간을 확보하세요.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="warranty" class="tab-content">
+                <h3>보증 정보</h3>
+                <div class="warranty-info">
+                    <div class="warranty-period">
+                        <h4>보증 기간</h4>
+                        <p>경동나비엔 전기온수기는 구입일로부터 <strong>3년</strong>의 제품 보증 기간을 제공합니다.</p>
+                        <ul>
+                            <li>내통 및 주요 부품: 3년</li>
+                            <li>전기 부품: 2년</li>
+                            <li>소모성 부품: 1년</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="warranty-coverage">
+                        <h4>보증 범위</h4>
+                        <p>보증 기간 내 정상적인 사용 상태에서 발생한 제품 결함에 대해 무상 수리 또는 부품 교체를 제공합니다.</p>
+                        <h5>보증 제외 사항:</h5>
+                        <ul>
+                            <li>사용자의 취급 부주의로 인한 고장 및 파손</li>
+                            <li>비공인 수리점에서의 수리로 인한 고장</li>
+                            <li>천재지변(화재, 수해, 지진 등)으로 인한 고장</li>
+                            <li>설치 후 이동 및 낙하로 인한 고장</li>
+                            <li>경동나비엔에서 지정하지 않은 부품 사용으로 인한 고장</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="warranty-service">
+                        <h4>서비스 신청 방법</h4>
+                        <p>제품에 문제가 발생했을 경우, 다음 방법으로 서비스를 신청할 수 있습니다:</p>
+                        <ul>
+                            <li>오예스 보일러 고객센터: <a href="tel:010-6331-1500">010-6331-1500</a></li>
+                            <li>경동나비엔 고객센터: 1588-1144</li>
+                            <li>이메일 문의: <a href="mailto:mariok30@naver.com">mariok30@naver.com</a></li>
+                        </ul>
+                        <p>서비스 신청 시 제품 모델명, 구입일자, 고장 증상을 자세히 알려주시면 더 빠른 서비스를 받으실 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="related-products">
+        <div class="container">
+            <h3>다른 제품 둘러보기</h3>
+            <div class="product-cards">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="public/images/boiler1.jpg" alt="린나이 전기온수기" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h4>린나이 전기온수기</h4>
+                        <p>고효율 에너지 절약형 보일러</p>
+                        <a href="product-rinnai.html" class="btn btn-secondary">자세히 보기</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="public/images/boiler2.jpg" alt="대성 전기온수기" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h4>대성 전기온수기</h4>
+                        <p>안정적인 성능의 프리미엄 보일러</p>
+                        <a href="product-daesung.html" class="btn btn-secondary">자세히 보기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="company-info">
+                    <h3>회사 정보</h3>
+                    <p>대표자: 김래성</p>
+                    <p>사업자등록: 816-06-00353</p>
+                    <p>주소: 경기도 고양시 일산동구 중앙로 1129 대우로얄파크 서관 1030호</p>
+                    <p><a herf="Production">by Mr. Lee</a></p>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>연락처</h3>
+                    <p><a href="tel:010-6331-1500">전화: 010-6331-1500</a></p>
+                    <p><a href="mailto:mariok30@naver.com">이메일: mariok30@naver.com</a></p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 오예스 보일러. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="public/script.js"></script>
+</body>
+</html>
